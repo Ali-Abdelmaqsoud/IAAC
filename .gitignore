@@ -1,17 +1,17 @@
 # Terraform files  
-.terraform/  
-*.tfstate  
-*.tfstate.backup  
-*.tfvars  
-.terraform.lock.hcl  
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
 
 # Ansible files  
-*.retry  
+*.retry
 
-# General files  
-.DS_Store  
-*.swp  
-*.log  
-.idea/  
-.vscode/  
-.env  
+# General files
+.DS_Store
+*.swp
+*.log
+.idea/
+.vscode/
+.env
