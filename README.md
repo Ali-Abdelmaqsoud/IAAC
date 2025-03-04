@@ -1,6 +1,6 @@
-# **Infrastructure as Code (IaC) with Terraform and Ansible** 🌐🔧
+# **Infrastructure as a Code (IaaC) with Terraform and Ansible** 🌐🔧
 
-This project demonstrates how to provision and configure AWS infrastructure using **Terraform** and manage it with **Ansible**. It includes both **static** and **dynamic inventory** setups for Ansible, making it flexible for different use cases. 🚀
+This project demonstrates how to provision and configure **AWS** infrastructure using **Terraform** and manage it with **Ansible**. It includes both **static** and **dynamic inventory** setups for Ansible, making it more flexible. 🚀
 
 ---
 
@@ -65,7 +65,7 @@ Before using this project, ensure you have the following installed and configure
    ```bash
    terraform apply
    ```
-5. After provisioning, Terraform will output the public IP addresses of the EC2 instances. These will be used in the Ansible inventory. 📡💻
+5. After provisioning, Terraform will output the public IP addresses of the EC2 instances. These will be used in the Ansible inventory.
 
 ### **2. Configure Infrastructure with Ansible** 🛠️
 
@@ -86,7 +86,7 @@ Before using this project, ensure you have the following installed and configure
 
 #### **Using Dynamic Inventory** 🔄
 
-1.  Ensure your AWS credentials are configured (e.g., using `aws configure`). 🔑
+1.  Ensure your AWS credentials are configured (e.g., using `aws configure`).
 
 2.  Run the Ansible playbook with the dynamic inventory:
 
