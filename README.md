@@ -106,27 +106,6 @@ When you're done, destroy the infrastructure to avoid unnecessary AWS charges:
 
 ---
 
-## **Dynamic Inventory Configuration** 🔄
-
-The dynamic inventory script (`aws_ec2.yml`) uses the `aws_ec2` plugin to fetch EC2 instance details from AWS. It groups instances by tags and uses their public IP addresses for connectivity. 🌐🔍
-
-Example `aws_ec2.yml`:
-
-```yaml
-plugin: aws_ec2
-regions:
-  - us-east-1
-keyed_groups:
-  - key: tags.Name
-    prefix: tag
-hostnames:
-  - public-ip-address
-filters:
-  instance-state-name: running
-```
-
----
-
 ## **Contributing** 🤝
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
