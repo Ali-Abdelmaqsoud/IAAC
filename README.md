@@ -45,21 +45,6 @@ Before using this project, ensure you have the following installed and configure
 
 ---
 
-## **Project Structure**
-
-├── terraform/ # Terraform configuration files
-│ ├── main.tf # Main Terraform configuration
-│ ├── variables.tf # Input variables for Terraform
-│ └── outputs.tf # Outputs (e.g., EC2 instance IPs)
-├── ansible/ # Ansible configuration files
-│ ├── inventory # Static inventory file
-│ ├── aws_ec2.yml # Dynamic inventory configuration
-│ └── playbook.yml # Ansible playbook for configuring EC2 instances
-├── README.md # Project documentation (you are here!)
-└── .gitignore # Files to ignore in Git
-
----
-
 ## **Usage**
 
 ### **1. Provision Infrastructure with Terraform**
