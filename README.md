@@ -71,7 +71,13 @@ Before using this project, ensure you have the following installed and configure
 
 #### **Using Static Inventory** 📝
 
-1.  Update the `ansible/inventory` file with the public IP addresses of your EC2 instances:
+1. Navigate to the `ansible/` directory:
+
+   ```bash
+   cd ansible
+   ```
+
+1. Update the `inventory` file with the public IP addresses of your EC2 instances:
 
 ```ini
   [webservers]
@@ -81,7 +87,7 @@ Before using this project, ensure you have the following installed and configure
 2.  Run the Ansible playbook:
 
 ```bash
-  ansible-playbook -i ansible/inventory ansible/playbook.yml
+  ansible-playbook -i inventory playbook.yml
 ```
 
 #### **Using Dynamic Inventory** 🔄
@@ -91,7 +97,7 @@ Before using this project, ensure you have the following installed and configure
 2.  Run the Ansible playbook with the dynamic inventory:
 
 ```bash
-  ansible-playbook -i ansible/aws_ec2.yml ansible/playbook.yml
+  ansible-playbook -i aws_ec2.yml playbook.yml
 ```
 
 ---
